@@ -1,0 +1,17 @@
+.button {
+  margin: 5px;
+  width: 12%;
+  height: 35px;
+  background-color: #3cb371;
+  border-radius: 6px;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

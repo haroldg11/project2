@@ -1,0 +1,610 @@
+<nav
+  class="navbar navbar-expand-lg navbar-light"
+  style="background-color:#3CB371; font-family: arial;"
+>
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav" style="font:bold">
+      <a class="nav-link" style="cursor: pointer;" routerLink="/home">Home</a>
+      <a class="nav-link" style="cursor: pointer;" routerLink="/store"
+        >Online Store</a
+      >
+      <a class="nav-link" style="cursor: pointer;" routerLink="/contact"
+        >Contact Us</a
+      >
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdownMenuLink"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Cart
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">name</th>
+                <th scope="col">quantity</th>
+                <th scope="col">Price</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+            </tbody>
+          </table>
+          <br>
+          <button class="btn-success" routerLink="/checkout">
+            Checkout
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container-fluid padding" style="font-family: arial;">
+  <br />
+  <br />
+  <div class="text-center">
+    <h1
+      style="font: bolder; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 70px;"
+    >
+      Cannabis
+    </h1>
+    <hr
+      style="height:3px;border:none;color:#333;background-color:#333; width: 400px;"
+    />
+  </div>
+  <br />
+  <br />
+  <br />
+  <div class="text-center">
+    <h2
+      style="font: bolder; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 70px;"
+    >
+      Indica
+    </h2>
+    <br />
+  </div>
+  <div class="container-fluid padding">
+    <div class="row padding text-center">
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="assets/strain4.jpg"
+            style="height: 400px;"
+          />
+          <div class="card-body">
+            <div class="card-title">
+              <br />
+              <h4>Blue Fin Tuna</h4>
+              <br />
+              <h5>{{ nug | currency }}</h5>
+              <br />
+              <br />
+              <app-items ></app-items>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="assets/strain5.jpg"
+            style="height: 400px;"
+          />
+          <div class="card-body">
+            <div class="card-title">
+              <br />
+              <h4>Pink Squirt</h4>
+              <br />
+              <h5>{{ nug }}</h5>
+              <br />
+              <br />
+              <div class="product-quantity">
+                <input type="number" value="1" min="1" class="text-center" />
+              </div>
+              <br />
+              <button class="btn-success">
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="assets/strain6.jpg"
+            style="height: 400px;"
+          />
+          <div class="card-body">
+            <div class="card-title">
+              <br />
+              <h4>Rockstar Tuna</h4>
+              <br />
+              <h5>{{ nug }}</h5>
+              <br />
+              <br />
+              <div class="product-quantity">
+                <input type="number" value="1" min="1" class="text-center" />
+              </div>
+              <br />
+              <button class="btn-success">
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <br />
+    <br />
+    <br />
+    <br />
+    <h2
+      style="font: bolder; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 70px;"
+    >
+      Sativa
+    </h2>
+  </div>
+  <div class="container-fluid padding">
+    <div class="row padding text-center">
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="assets/strain9.jpg"
+            style="height: 400px;"
+          />
+          <div class="card-body">
+            <div class="card-title">
+              <br />
+              <h4>Alien Haze</h4>
+              <br />
+              <h5>{{ nug }}</h5>
+              <br />
+              <br />
+              <div class="product-quantity">
+                <input type="number" value="1" min="1" class="text-center" />
+              </div>
+              <br />
+              <button class="btn-success">
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="assets/strain10.jpg"
+            style="height: 400px;"
+          />
+          <div class="card-body">
+            <div class="card-title">
+              <br />
+              <h4>Lemon Haze</h4>
+              <br />
+              <h5>{{ nug }}</h5>
+              <br />
+              <br />
+              <div class="product-quantity">
+                <input type="number" value="1" min="1" class="text-center" />
+              </div>
+              <br />
+              <button class="btn-success">
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="assets/strain11.jpg"
+            style="height: 400px;"
+          />
+          <div class="card-body">
+            <div class="card-title">
+              <br />
+              <h4>Pre-Bubba 98</h4>
+              <br />
+              <h5>{{ nug }}</h5>
+              <br />
+              <br />
+              <div class="product-quantity">
+                <input type="number" value="1" min="1" class="text-center" />
+              </div>
+              <br />
+              <button class="btn-success">
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h2
+      style="font: bolder; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 70px;"
+    >
+      Hybrids
+    </h2>
+    <br />
+  </div>
+  <div class="container-fluid padding">
+    <div class="row padding text-center">
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="assets/strain7.jpg"
+            style="height: 400px;"
+          />
+          <div class="card-body">
+            <div class="card-title">
+              <br />
+              <h4>BubbleG zskittlez</h4>
+              <br />
+              <h5>{{ nug }}</h5>
+              <br />
+              <br />
+              <div class="product-quantity">
+                <input type="number" value="1" min="1" class="text-center" />
+              </div>
+              <br />
+              <button class="btn-success">
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="assets/strain12.jpg"
+            style="height: 400px;"
+          />
+          <div class="card-body">
+            <div class="card-title">
+              <br />
+              <h4>Pink Papaya Kush</h4>
+              <br />
+              <h5>{{ nug }}</h5>
+              <br />
+              <br />
+              <div class="product-quantity">
+                <input type="number" value="1" min="1" class="text-center" />
+              </div>
+              <br />
+              <button class="btn-success">
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="assets/strain8.jpg"
+            style="height: 400px;"
+          />
+          <div class="card-body">
+            <div class="card-title">
+              <br />
+              <h4>Pink Unicorn</h4>
+              <br />
+              <h5>{{ nug }}</h5>
+              <br />
+              <br />
+              <div class="product-quantity">
+                <input type="number" value="1" min="1" class="text-center" />
+              </div>
+              <br />
+              <button class="btn-success">
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1
+      style="font: bolder; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 70px;"
+    >
+      Hash and Concentrates
+    </h1>
+    <hr
+      style="height:3px;border:none;color:#333;background-color:#333; width: 700px;"
+    />
+  </div>
+  <div class="text-center">
+    <br />
+    <br />
+    <br />
+    <br />
+    <h4
+      style="font: bolder; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 70px;"
+    >
+      Distilate Pens
+    </h4>
+    <br />
+  </div>
+  <div class="container-fluid padding">
+    <div class="row padding text-center">
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="assets/distiliate pen.jpg"
+            style="height: 400px;"
+          />
+          <div class="card-body">
+            <div class="card-title">
+              <br />
+              <h4>B.C King Premium Terps.</h4>
+              <br />
+              <h5>$50</h5>
+              <br />
+              <div class="product-quantity">
+                <input type="number" value="1" min="1" class="text-center" />
+              </div>
+              <br />
+              <button class="btn-success">
+                Order Now
+              </button>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h4
+      style="font: bolder; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 70px;"
+    >
+      Shatter
+    </h4>
+    <br />
+  </div>
+  <div class="container-fluid padding">
+    <div class="row padding text-center">
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="assets/shatter2.jpg"
+            style="height: 400px;"
+          />
+          <div class="card-body">
+            <div class="card-title">
+              <br />
+              <h4>Gods Gift</h4>
+              <br />
+              <h5>$40</h5>
+              <br />
+              <div class="product-quantity">
+                <input type="number" value="1" min="1" class="text-center" />
+              </div>
+              <br />
+              <button class="btn-success">
+                Order Now
+              </button>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="assets/shatter3.jpg"
+            style="height: 400px;"
+          />
+          <div class="card-body">
+            <div class="card-title">
+              <br />
+              <h4>Watermelon Kush</h4>
+              <br />
+              <h5>$40</h5>
+              <br />
+              <div class="product-quantity">
+                <input type="number" value="1" min="1" class="text-center" />
+              </div>
+              <br />
+              <button class="btn-success">
+                Order Now
+              </button>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="assets/shatter4.jpg"
+            style="height: 400px;"
+          />
+          <div class="card-body">
+            <div class="card-title">
+              <br />
+              <h4>Vanilla Kush</h4>
+              <br />
+              <h5>$40</h5>
+              <br />
+              <div class="product-quantity">
+                <input type="number" value="1" min="1" class="text-center" />
+              </div>
+              <br />
+              <button class="btn-success">
+                Order Now
+              </button>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="assets/shatterx.jpg"
+            style="height: 400px;"
+          />
+          <div class="card-body">
+            <div class="card-title">
+              <br />
+              <h4>Candy Land</h4>
+              <br />
+              <h5>$40</h5>
+              <br />
+              <div class="product-quantity">
+                <input type="number" value="1" min="1" class="text-center" />
+              </div>
+              <br />
+              <button class="btn-success">
+                Order Now
+              </button>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h4
+      style="font: bolder; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 70px;"
+    >
+      Hash
+    </h4>
+    <br />
+  </div>
+  <div class="container-fluid padding">
+    <div class="row padding text-center">
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="assets/whitewidow.png"
+            style="height: 400px;"
+          />
+          <div class="card-body">
+            <div class="card-title">
+              <br />
+              <h4>White Widow</h4>
+              <br />
+              <h5>{{ nug }}</h5>
+              <br />
+              <br />
+              <br />
+              <div class="product-quantity">
+                <input type="number" value="1" min="1" class="text-center" />
+              </div>
+              <br />
+              <button
+                class="btn-success"
+              >
+                Order Now
+              </button>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="assets/ogkush.png"
+            style="height: 400px;"
+          />
+          <div class="card-body">
+            <div class="card-title">
+              <br />
+              <h4>OG Kush</h4>
+              <br />
+              <h5>{{ nug }}</h5>
+              <br />
+              <br />
+              <div class="product-quantity">
+                <input type="number" value="1" min="1" class="text-center" />
+              </div>
+              <br />
+              <button
+                class="btn-success"
+              >
+                Order Now
+              </button>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<br />
+<br />
+<div class="text-center" style="font-family: arial; background-color: #3CB371;">
+  <br />
+  <h5>
+    © 2017 Top Shelf Edibles
+  </h5>
+  <br />
+</div>
